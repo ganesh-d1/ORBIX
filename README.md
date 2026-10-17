@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -36,11 +34,3 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
-## Some Changes
-
-On the initial page load I will store the assets in local storage or session then access the assets from their so that my models hopefully load faster.
-=======
-# ORBIX
-🚀 A futuristic space exploration website built with Next.js, featuring immersive cosmic visuals, smooth animations, interactive experiences, and science-inspired content.
->>>>>>> 7c40324ed52c8b81a9b587f68488fdfe85be6697

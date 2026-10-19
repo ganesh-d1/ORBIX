@@ -16,7 +16,7 @@ export function CTA() {
               {" "}
               <div className="bg-primary h-1 w-4" />{" "}
               <div className="bg-primary h-1 w-2" />
-              <div className="bg-primary h-1 w-1 rounded-full" /> JOIN US
+              <div className="bg-primary h-1 w-1 rounded-full" /> JOIN US At ORBIX 
             </div>
             <h5 className="text-secondary text-center text-[18px] font-normal lg:text-left lg:text-base">
               JOIN ORBIX. <br /> INNOVATE AND INSPIRE THE WORLD

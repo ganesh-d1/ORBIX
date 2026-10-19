@@ -28,9 +28,23 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## CI and deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub Actions runs a production build for every push and pull request.
+The workflow is defined in `.github/workflows/ci.yml`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To set up automatic deployments:
 
+1. Sign in to [Vercel](https://vercel.com/) and choose **Add New → Project**.
+2. Import the `ganesh-d1/ORBIX` GitHub repository, authorizing Vercel to access
+   it if prompted.
+3. Keep the detected Next.js framework and repository root, then choose
+   **Deploy**.
+4. In the Vercel project's **Settings → Git**, confirm the production branch.
+   Pushes to that branch create production deployments; pushes to other branches
+   and pull requests create preview deployments.
+
+Vercel's GitHub integration handles deployment, so no Vercel token or deployment
+secrets need to be added to GitHub Actions. The Actions workflow validates code;
+Vercel builds and deploys it. Add required runtime environment variables in
+**Settings → Environment Variables** in Vercel, then redeploy.
